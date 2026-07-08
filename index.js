@@ -9,6 +9,12 @@ btnEl.addEventListener("click", ()=>{
 
 copyIconEl.addEventListener("click", ()=>{
     copyPassword();
+    if (inputEl.value){
+        alertContainerEl.classList.remove("active");
+        setTimeout(()=>{
+            alertContainerEl.classList.add("active");
+            }, 2000)
+    }
 })
 
 function createPassword(){
